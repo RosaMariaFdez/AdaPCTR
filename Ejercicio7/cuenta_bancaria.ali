@@ -1,0 +1,123 @@
+V "GNAT Lib v10"
+P ZX
+
+RN
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_PROTECTED_TYPES
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=4
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U cuenta_bancaria%b	cuenta_bancaria.adb	3ad6b5c6 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+Z system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+
+U cuenta_bancaria%s	cuenta_bancaria.ads	3311c8ac EE NE OO PK
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system%s		system.ads		system.ali
+Z system.tasking%s	s-taskin.adb		s-taskin.ali
+Z system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+Z system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+
+D ada.ads		20230707070819 76789da1 ada%s
+D a-except.ads		20230707070819 a7106115 ada.exceptions%s
+D a-finali.ads		20230707070819 bf4f806b ada.finalization%s
+D a-inteio.ads		20230707070819 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20230707070819 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20230707070819 119b8fb3 ada.streams%s
+D a-tags.ads		20230707070819 491b781d ada.tags%s
+D a-textio.ads		20230707070819 aef4d56d ada.text_io%s
+D a-tiinio.ads		20230707070819 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20230707070819 0e9b276f ada.unchecked_conversion%s
+D cuenta_bancaria.ads	20240618104402 6bae9465 cuenta_bancaria%s
+D cuenta_bancaria.adb	20240618104401 09c77d6a cuenta_bancaria%b
+D interfac.ads		20230707070819 5ab55268 interfaces%s
+D i-c.ads		20230707070819 5421119b interfaces.c%s
+D i-cstrea.ads		20230707070819 e53d8b8e interfaces.c_streams%s
+D system.ads		20230707070819 4635ec04 system%s
+D s-atacco.ads		20230707070819 4c36d12f system.address_to_access_conversions%s
+D s-conca2.ads		20230707070819 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20230707070819 0ebbdb71 system.crtl%s
+D s-exctab.ads		20230707070819 54135002 system.exception_table%s
+D s-ficobl.ads		20230707070819 078245e4 system.file_control_block%s
+D s-finroo.ads		20230707070819 4ff27390 system.finalization_root%s
+D s-imgint.ads		20230707070819 02dbe0c2 system.img_int%s
+D s-linux.ads		20230707070818 ed0b8aee system.linux%s
+D s-multip.ads		20230707070819 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20230708061938 56602da1 system.os_constants%s
+D s-osinte.ads		20230708061938 baabc537 system.os_interface%s
+D s-parame.ads		20230707070819 48ec542b system.parameters%s
+D s-secsta.ads		20230707070819 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20230707070819 a7318a92 system.soft_links%s
+D s-stache.ads		20230707070819 a37c21ec system.stack_checking%s
+D s-stausa.ads		20230707070819 017a0a05 system.stack_usage%s
+D s-stalib.ads		20230707070819 09bd3940 system.standard_library%s
+D s-stoele.ads		20230707070819 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20230707070818 2b3f8252 system.task_info%s
+D s-taspri.ads		20230707070818 f40ac08d system.task_primitives%s
+D s-taskin.ads		20230707070818 b9d612e2 system.tasking%s
+D s-taprob.ads		20230707070818 acd6094d system.tasking.protected_objects%s
+D s-tpoben.ads		20230707070819 60ad3dae system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20230707070819 5f548bb3 system.tasking.protected_objects.operations%s
+D s-traent.ads		20230707070819 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20230707070819 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20230707070819 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [consultar_saldo cuenta_bancaria__cuenta 10 13 none]
+G c Z s b [extraer_dinero cuenta_bancaria__cuenta 11 13 none]
+G c Z s b [realizar_ingreso cuenta_bancaria__cuenta 12 13 none]
+G c Z s b [transferir cuenta_bancaria__cuenta 13 13 none]
+G c Z s s [cuentaVDI cuenta_bancaria 9 4 none]
+G c Z s s [cuentaVDF cuenta_bancaria 9 4 none]
+G c Z s s [cuentaVIP cuenta_bancaria 9 4 none]
+G c Z s s [P2sIP cuenta_bancaria 11 7 none]
+G c Z s s [P5sIP cuenta_bancaria 12 7 none]
+G c Z s s [P11sIP cuenta_bancaria 13 7 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 2r6 4r5 5r5 12|1r6 2r6 4r5 5r5
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[9|46] 11|2w10 5r9 12|2w10 5r9
+X 8 a-textio.ads
+57K13*Text_IO 727e16 11|1w10 4r9 12|1w10 4r9
+508U14*Put_Line 12|13s10 20s13 22s13 29s10 37s13 39s13
+X 11 cuenta_bancaria.ads
+7K9*Cuenta_Bancaria 18l5 18e20 12|7b14 45l5 45t20
+9W19*Cuenta 13r47 15E7 16l8 16e14 12|9b19 32r47 43l8 43t14
+10Y13 Consultar_Saldo 12|11b13 14l11 14t26
+11Y13 Extraer_Dinero 11>28 12|16b13 24l11 24t25
+11i28 Cantidad{integer} 12|18r22 19r30
+12Y13 Realizar_Ingreso 12>30 12|26b13 30l11 30t27 36s28
+12i30 Cantidad{integer} 12|28r27
+13Y13 Transferir 13^24 13>55 12|32b13 41l11 41t21
+13p24 Cuenta_Destino(9W19) 12|36r13
+13i55 Cantidad{integer} 12|34r22 35r30 36r45
+15i7 Saldo{integer} 12|13r52 18r13 19r13 19r22 20r75 28r10 28r19 29r68 34r13
+. 35r13 35r22 37r80
+X 12 cuenta_bancaria.adb
+16i28 Cantidad{integer}
+26i30 Cantidad{integer}
+32p24 Cuenta_Destino(11|9W19)
+32i55 Cantidad{integer}
+X 32 s-stausa.ads
+208U14*Initialize 209i<c,__gnat_stack_usage_initialize>22
+273U14*Output_Results 277i<c,__gnat_stack_usage_output_results>22
+
